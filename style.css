@@ -255,7 +255,6 @@ position: relative;
 }
 
 .titleNews {
-    idth: 100%;
     background-color: #650D1B;
     color: white;
     margin: 0px;
@@ -428,6 +427,10 @@ color: white;
     margin-left: 35px;
 }
 
+.menuSmollSize {
+    visibility: hidden;
+}
+
 
 @media only screen and (max-width: 1080px) {
 
@@ -450,26 +453,271 @@ color: white;
 
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 895px) {
 
 .search {
     visibility: hidden;
 }
 
+.menuSmollSize {
+    visibility: visible;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    font-size: 40px;
+    padding: 5px;
+    margin-left: 79px;
+    color: white;
+}
 
 .storyImg img {
-    width: 30%;
+    width: 40%;
     height: auto;
     /* float: left; */
-    padding-top: 45px;
-    margin-left: 15px;
+    padding-top: 15px;
+    margin-left: 168px;
+}  
+
+.storyDesc p {
+    padding: 10px;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+     top: 215px;
+     /* padding: 35px; */
+     overflow: hidden;
+        white-space: normal;
+    padding: 6px;
+     overflow: hidden;
+    width: 93%;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    }
+
+
+.btnGrup {
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    left: 51px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.social button {
+    width: 80%;
+    height: 30px;
+    background-color: #C1DF1F;
+    border: 1px solid black;
+    margin: 18px;
+}
+
+.logoTextWrap {
+    float: left;
+    color: black;
+    font-size: 19px;
+    margin-top: 20px;
+}
+
+.logoTextWrap h2 {
+    font-family: 'Bungee', cursive;
+    margin: 0px;
+    font-size: 21px;
+    margin-top: 15px;
+    color: #C1DF1F;
 }
 
 .storyDesc p {
     padding: 10px;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 250px;
+    /* padding: 35px; */
+    overflow: hidden;
+    white-space: normal;
+    padding: 6px;
+}
+
 }
 
 
 
 
+@media only screen and (max-width: 710px) {
+    .menuList {
+        float: left;
+        margin-top: 5px;
+        visibility: hidden;
+    }
+
+.fa, .fas {
+    font-weight: 900;
+    font-size: 40px;
+    padding: 5px;
+    margin-left: 79px;
+    position: absolute;
+    left: 0;
+    margin-top: 5px;
+    color: white;
 }
+
+.logoBox {
+    margin-left: 190px;
+}
+
+.header {
+    display: block;
+}
+
+.langDescrip { 
+    display: none;
+} 
+
+  .languageBox {
+    width: 100%;
+    float: right;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    margin-right: 15px;
+}
+
+.LeftNavigation { 
+    display: none;
+}
+
+.social{ 
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.leftContent {
+    width: 25%;
+    height: 800px;
+    float: right;
+    display: none;
+}
+
+.storyImg img {
+    width: 35%;
+    display: flex;
+    padding: 29px;
+    padding-left: 45px;
+}
+
+.storyDesc p {
+   overflow: hidden;
+   width:50%;
+   display: -webkit-box;
+   -webkit-line-clamp: 6;
+   -webkit-box-orient: vertical;
+   margin-left: 26%;
+}
+
+.footer ul {
+    display: block;
+}
+
+.footer ul li {
+    display: block;
+    flex-direction: row;
+    /* margin-left: 30px; */
+    height: 25px;
+    text-align: center;
+    height: 30px;
+    width: 90%;
+}
+
+    .footer ul  {
+       margin: 0px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 208px;
+        display: inline-flex;
+        flex-direction: row;
+        border-top: 10px solid #650D1B;
+        padding: 10px 1px;
+        position: relative;
+        justify-content: center;
+        background-color: #650D1B;
+        color: white;
+    }
+
+ .footer p {
+     display: flex;
+     align-items: center;
+      position: absolute;
+      bottom: 0;
+       margin-left: 16px;
+ }
+
+.cardsGrup {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    width: 50%;
+    height: 350px;
+    text-align: center;
+    padding: 7px;
+    background-color: #823200;
+    color: white;
+    margin-bottom: 12px;
+}
+    
+    .titleNews {
+        height: 45px;
+    }
+
+    .titleStory {
+        height: 45px;
+    }
+
+    #copy {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 680px) {
+
+    .storyImg img {
+        width: 32%;
+        padding: 0px;
+        padding-top: 10px;
+    }
+
+    .storyDesc p {
+        top: 220px;
+        margin-left: 120px;
+    }
+
+    .logoBox {
+        margin-left: 138px;
+    }
+
+    .btnGrup {
+        left: 34px;
+    }
+
+    footer p {
+        visibility: hidden;
+    }
+
+    #copy {
+        display: none;
+    }
+}
+
