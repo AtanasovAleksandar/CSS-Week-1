@@ -344,9 +344,9 @@ position: relative;
 }
 
 .social button:hover {
-background-color: #990500;
-opacity: 6;
-color: white;
+  background-color: #990500;
+  opacity: 6;
+  color: white;
 }
 
 .LeftNavigation {
@@ -431,6 +431,10 @@ color: white;
     visibility: hidden;
 }
 
+.readMore {
+    visibility: hidden;
+}
+
 
 @media only screen and (max-width: 1080px) {
 
@@ -472,11 +476,9 @@ color: white;
 }
 
 .storyImg img {
-    width: 40%;
-    height: auto;
-    /* float: left; */
+    width: 55%;
     padding-top: 15px;
-    margin-left: 168px;
+    margin-left: 0px;
 }  
 
 .storyDesc p {
@@ -497,10 +499,7 @@ color: white;
     -webkit-box-orient: vertical;
     }
 
-
 .btnGrup {
-    display: inline-block;
-    position: absolute;
     bottom: 20px;
     left: 51px;
     width: 100%;
@@ -510,10 +509,9 @@ color: white;
 .social button {
     width: 80%;
     height: 30px;
-    background-color: #C1DF1F;
-    border: 1px solid black;
-    margin: 18px;
+   
 }
+
 
 .logoTextWrap {
     float: left;
@@ -533,7 +531,7 @@ color: white;
 .storyDesc p {
     padding: 10px;
     height: 100px;
-    width: 100%;
+    width: 90%;
     position: absolute;
     left: 0;
     top: 250px;
@@ -546,13 +544,11 @@ color: white;
 }
 
 
-
-
 @media only screen and (max-width: 710px) {
     .menuList {
         float: left;
         margin-top: 5px;
-        visibility: hidden;
+        display: none;
     }
 
 .fa, .fas {
@@ -578,19 +574,15 @@ color: white;
     display: none;
 } 
 
-  .languageBox {
-    width: 100%;
-    float: right;
-    display: grid;
-    grid-template-rows: 50% 50%;
-    margin-right: 15px;
+.languageBox {
+  width: 100%;
+  float: right;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  margin-right: 15px;
 }
 
 .LeftNavigation { 
-    display: none;
-}
-
-.social{ 
     display: none;
 }
 
@@ -599,26 +591,41 @@ color: white;
 }
 
 .leftContent {
-    width: 25%;
-    height: 800px;
-    float: right;
-    display: none;
+    width: 100%;
+    height: 330px;
 }
 
 .storyImg img {
     width: 35%;
     display: flex;
     padding: 29px;
-    padding-left: 45px;
+    padding-left: 200px;
 }
 
 .storyDesc p {
-   overflow: hidden;
    width:50%;
    display: -webkit-box;
    -webkit-line-clamp: 6;
    -webkit-box-orient: vertical;
    margin-left: 26%;
+}
+
+.readMore {
+    visibility: visible;
+    float: right;
+    border: 1px solid black;
+    background-color: #C1DF1F;
+    margin-right: 50px;
+    width: 45px;
+    width: 85px;
+    height: 21px;
+    text-align: center;
+}
+
+.readMore:hover {
+    background-color: #990500;
+    opacity: 6;
+    color: white;
 }
 
 .footer ul {
@@ -696,7 +703,12 @@ color: white;
     .storyImg img {
         width: 32%;
         padding: 0px;
-        padding-top: 10px;
+        padding-top: 20px;
+        padding-left: 165px;
+    }
+
+    .storyDesc:nth-child(2) {
+        position: relative;
     }
 
     .storyDesc p {
@@ -712,12 +724,24 @@ color: white;
         left: 34px;
     }
 
+    .readMore {
+        position: absolute;
+        bottom: 73px;
+        margin-right: 206px;
+        margin-top: 155px;
+        right: 47px;
+    }
+
     footer p {
         visibility: hidden;
     }
 
     #copy {
         display: none;
+    }
+
+    #socialBlok {
+        visibility: visible;
     }
 }
 
