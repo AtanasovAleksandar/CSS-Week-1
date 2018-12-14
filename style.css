@@ -630,6 +630,9 @@ position: relative;
 
 .footer ul {
     display: block;
+    margin: 0px;
+    margin-block-start: 0px;
+    padding-inline-start: 0px;
 }
 
 .footer ul li {
